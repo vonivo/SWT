@@ -12,7 +12,7 @@ def is_italic(driver, element):
 
 def inside_parentheses(driver, element):
     # Run JS in the browser to compute parentheses around this element
-    return driver.execute_script("""
+    return driver.execute_script(r"""
         var a = arguments[0];
         var parent = a.parentElement;
         
