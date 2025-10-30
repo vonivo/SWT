@@ -48,7 +48,7 @@ def find_first_valid_link(driver, visited_links):
         if not a.get_attribute("href"):
             continue
         if a.get_attribute("href") in visited_links:
-            print(f"Loop detected on {a.get_attribute("href")}" )
+            print(f"Loop detected on {a.get_attribute('href')}" )
             continue
 
 
